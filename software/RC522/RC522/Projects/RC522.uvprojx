@@ -403,11 +403,6 @@
               <FilePath>.\src\usbd_usr.c</FilePath>
             </File>
             <File>
-              <FileName>user_ap0.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\src\user_ap0.c</FilePath>
-            </File>
-            <File>
               <FileName>system_stm32f0xx.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\src\system_stm32f0xx.c</FilePath>
@@ -421,6 +416,16 @@
               <FileName>app.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\src\app.c</FilePath>
+            </File>
+            <File>
+              <FileName>led.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\src\led.c</FilePath>
+            </File>
+            <File>
+              <FileName>beep.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\src\beep.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -571,11 +576,6 @@
               <FileName>delay.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\user\systick\delay.c</FilePath>
-            </File>
-            <File>
-              <FileName>led.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\user\LED\led.c</FilePath>
             </File>
           </Files>
         </Group>

@@ -37,7 +37,7 @@
 /* Private variables ---------------------------------------------------------*/
 /* Private function prototypes -----------------------------------------------*/
 /* Private functions ---------------------------------------------------------*/
-uint8_t Send_Buffer[2];
+//uint8_t Send_Buffer[2];
 uint8_t PrevXferDone = 1;
 //extern uint32_t ADC_ConvertedValueX;
 //extern uint32_t ADC_ConvertedValueX_1;
@@ -113,7 +113,7 @@ void USB_IRQHandler(void)
   */
 void EXTI4_15_IRQHandler(void)
 {
-  
+  /*
   if (EXTI_GetITStatus(EXTI_Line10) != RESET)
   {
     if((PrevXferDone)  && (USB_Device_dev.dev.device_status==USB_CONFIGURED))
@@ -133,9 +133,8 @@ void EXTI4_15_IRQHandler(void)
       PrevXferDone = 0;
     }
     
-    /* Clear the EXTI line pending bit */
     EXTI_ClearITPendingBit(EXTI_Line10);
-  }
+  }*/
 }
 
 /**
@@ -147,7 +146,8 @@ void DMA1_Channel1_IRQHandler(void)
 {  
 
 }
-         
+     
+
 /******************************************************************************/
 /*                 STM32F0xx Peripherals Interrupt Handlers                   */
 /*  Add here the Interrupt Handler for the used peripheral(s) (PPP), for the  */

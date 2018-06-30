@@ -18,5 +18,6 @@ char PcdSelect ( uint8_t * pSnr );
 char PcdAnticoll ( uint8_t * pSnr );
 char PcdHalt( void );
 char PcdWrite ( uint8_t ucAddr, uint8_t * pData );
+char PcdRead ( uint8_t ucAddr, uint8_t * pData );
 #endif /* __RC522_FUNCTION_H */
 

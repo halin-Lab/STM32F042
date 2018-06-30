@@ -191,18 +191,18 @@ void PcdReset (void)
  */
 void M500PcdConfigISOType ( uint8_t ucType )
 {
-	if ( ucType == 'A')                     //ISO14443_A
+	if(ucType == 'A')                     //ISO14443_A
   {
-		ClearBitMask ( Status2Reg, 0x08 );
-    WriteRawRC ( ModeReg, 0x3D );//3F
-		WriteRawRC ( RxSelReg, 0x86 );//84
-		WriteRawRC( RFCfgReg, 0x7F );   //4F
-		WriteRawRC( TReloadRegL, 30 );//tmoLength);// TReloadVal = 'h6a =tmoLength(dec) 
-		WriteRawRC ( TReloadRegH, 0 );
-		WriteRawRC ( TModeReg, 0x8D );
-		WriteRawRC ( TPrescalerReg, 0x3E );
-		macRC522_DELAY ();
-		PcdAntennaOn ();//开天线
+		ClearBitMask(Status2Reg,0x08);
+    WriteRawRC(ModeReg,0x3D);//3F
+		WriteRawRC(RxSelReg,0x86);//84
+		WriteRawRC(RFCfgReg,0x7F);   //4F
+		WriteRawRC(TReloadRegL,30);//tmoLength);// TReloadVal = 'h6a =tmoLength(dec) 
+		WriteRawRC(TReloadRegH,0);
+		WriteRawRC(TModeReg,0x8D);
+		WriteRawRC(TPrescalerReg,0x3E);
+		macRC522_DELAY();
+		PcdAntennaOn();//开天线
    }
 }
 

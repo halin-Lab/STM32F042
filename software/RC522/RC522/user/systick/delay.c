@@ -20,9 +20,6 @@ void delay_ms(uint16_t delay)
   while(TimingDelay != 0);
 }
 
-
-
-
 /**
   * @brief  Decrements the TimingDelay variable.
   * @param  None
@@ -45,3 +42,4 @@ void SysTick_Handler(void)
 {
   TimingDelay_Decrement();
 }
+

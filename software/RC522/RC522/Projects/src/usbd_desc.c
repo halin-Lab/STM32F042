@@ -34,7 +34,7 @@
 #define USBD_PID                     0x0522
 
 #define USBD_LANGID_STRING            0x409
-#define USBD_MANUFACTURER_STRING      "STMicroelectronics"
+#define USBD_MANUFACTURER_STRING      "HaLin's lab"
 
 #define USBD_PRODUCT_FS_STRING        "RC522 Reader"
 

@@ -33,7 +33,8 @@
 #include "rc522_config.h"
 #include "rc522_function.h"
 #include "app.h"
-
+#include "led.h"
+#include "beep.h"
 uint8_t tog=0;
 void toggle_led(void)
 {
@@ -96,14 +97,14 @@ int main(void)
             &USR_desc, 
             &USBD_HID_cb, 
             &USR_cb);
-	RC522_Init ();
-	PcdReset ();
-	M500PcdConfigISOType ( 'A' );//设置工作方式
+	RC522_Init();
+	PcdReset();
+	M500PcdConfigISOType('A');//设置工作方式
 	app_init();
-
+	led_init();
+	beep_init();
   while (1)
   {
-//	IC_test();
     task();
   }
 } 
